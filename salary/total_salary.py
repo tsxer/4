@@ -20,5 +20,5 @@ def total_salary(file_path:Path):
   print(f"Общая сумма заработной платы: {total}, Средняя заработная плата: {average}")
   
   
-total_salary(Path("salary_file.txt"))
+total_salary(Path("salary/salary_file.txt"))
 
