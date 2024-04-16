@@ -7,7 +7,7 @@ def main(p: Path):
     for el in p.iterdir():  
         if el.is_dir():
             print(f"{Fore.YELLOW}[FOLDER]{Fore.RESET} {el}")  
-            print(f"{Fore.GREEN}{"-" * 20}{Fore.RESET}")
+            print(f"{Fore.GREEN}{'-' * 20}{Fore.RESET}")
             main(el) 
         else:
             print(f"{Fore.BLUE}[ELEMENT]{Fore.RESET} {el}") 
@@ -21,5 +21,5 @@ if __name__ == "__main__":
   except Exception as e:
     print (f"Произошла ошибка: {e}")
   finally:
-     input(f"{Fore.RED}{"Нажмите Enter чтобы выйти"}{Fore.RESET}")
+     input(f"{Fore.RED}{'Нажмите Enter чтобы выйти'}{Fore.RESET}")
      os.system('cls' if os.name == 'nt' else 'clear')
