@@ -17,4 +17,4 @@ def get_cats_info(file_path: Path) -> list:
       
     return cat_lst
 
-print(get_cats_info(Path("cats_file.txt")))
+print(get_cats_info(Path("cats/cats_file.txt")))
